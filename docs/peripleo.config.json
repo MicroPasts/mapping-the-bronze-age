@@ -5,12 +5,18 @@
     {
       "name": "Bronze Age Index",
       "format": "LINKED_PLACES",
-      "src": "./data/VisitPlus-bai.json",
+      "src": "./data/bai.json",
       "attribution": "The MicroPasts Community,Partners & Contributors/ British  Museum/ Daniel Pett</a>"
     }
   ],
   "facets": [
-    "objectType","context","county","country","institution"
+    { "name": "object type", "path": ["properties", "objectType"] },
+    { "name": "collection", "path": ["properties", "institution"] },
+    { "name": "country", "path": ["properties", "country"] },
+    { "name": "county", "path": ["properties", "county"] },
+    { "name": "context", "path": ["properties", "context"] },
+
+
   ],
   "link_icons": [
     { "pattern": "maps.google.com",  "img": "./logos/maps.google.com.png", "label": "Google Maps" },
