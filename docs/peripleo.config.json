@@ -1,6 +1,7 @@
 {
   "initial_bounds": [-7.9, 49.5, 2.2, 59.4],
   "map_style": "./map-style-OSM.json",
+  "welcome_message": "welcome.md",
   "data": [
     {
       "name": "Bronze Age Index",
