@@ -1,18 +1,15 @@
 {
   "initial_bounds": [-7.9, 49.5, 2.2, 59.4],
   "map_style": "./map-style-OSM.json",
-  "welcome_message": "welcome.md",
   "data": [
     {
       "name": "Bronze Age Index",
       "format": "LINKED_PLACES",
       "src": "./data/bai.json",
-      "attribution": "The MicroPasts Community,Partners & Contributors/ British  Museum/ Daniel Pett</a>"
+      "attribution": "The MicroPasts Community"
     }
   ],
-  "facets": [
-    { "name": "object type", "path": ["properties", "title"] }
-  ],
+  "facets": [],
   "link_icons": [
     { "pattern": "maps.google.com",  "img": "./logos/maps.google.com.png", "label": "Google Maps" },
     { "pattern": "www.geograph.org.uk", "img": "./logos/geograph.org.png", "label": "Geograph" },
