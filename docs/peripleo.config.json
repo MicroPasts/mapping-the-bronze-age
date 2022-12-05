@@ -10,9 +10,7 @@
     }
   ],
   "facets": [
-    { "name": "object type", "path": ["properties", "objectType"] },
-    { "name": "collection", "path": ["properties", "institution"] },
-    { "name": "country", "path": ["properties", "country"] }
+    { "name": "object type", "path": ["properties", "objectType"] }
   ],
   "link_icons": [
     { "pattern": "maps.google.com",  "img": "./logos/maps.google.com.png", "label": "Google Maps" },
