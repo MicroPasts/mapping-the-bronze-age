@@ -3,14 +3,14 @@
   "map_style": "./map-style-OSM.json",
   "data": [
     {
-      "name": "VisitPlus",
+      "name": "Bronze Age Index",
       "format": "LINKED_PLACES",
-      "src": "./data/VisitPlus-UK.lp.json",
-      "attribution": "VisitPlus © <a href=\"https://britishlibrary.github.io/locating-a-national-collection/\" target=\"_blank\"><i>Locating a National Collection</i> Partners & Contributors</a>"
+      "src": "./data/VisitPlus-bai.json",
+      "attribution": "The MicroPasts Community,Partners & Contributors/ British  Museum/ Daniel Pett</a>"
     }
   ],
   "facets": [
-    "type"
+    "objectType","context","county","country","institution"
   ],
   "link_icons": [
     { "pattern": "maps.google.com",  "img": "./logos/maps.google.com.png", "label": "Google Maps" },
