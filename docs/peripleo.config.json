@@ -11,19 +11,19 @@
   ],
   "facets": [
     {
-      "name": "county", "path": ["properties", "county"] 
+      "name": "county", "path": ["properties", "county"]
     },
     {
       "name": "country", "path": ["properties", "country"]
     },
     {
-      "discovery year": "custodian", "path": ["properties", "discovery"]
+      "discovery": "custodian", "path": ["properties", "discovery"]
     },
     {
-      "context of discovery": "context", "path": ["properties", "context"]
+      "context": "context", "path": ["properties", "context"]
     },
     {
-      "owning institution": "context", "path": ["properties", "institution"]
+      "institution": "context", "path": ["properties", "institution"]
     }
   ]
 
