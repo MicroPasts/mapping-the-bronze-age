@@ -7,6 +7,12 @@
       "format": "LINKED_PLACES",
       "src": "data/baiFull.json",
       "attribution": "The MicroPasts Community"
+    },
+    {
+      "name": "Portable Antiquities Bronze Age",
+      "format": "LINKED_PLACES",
+      "src": "data/pas-ld.json",
+      "attribution": "The Trustees of the British Museum"
     }
   ],
   "facets": [
@@ -24,6 +30,9 @@
     },
     {
       "name": "holding institution", "path": ["properties", "institution"]
+    },
+    {
+      "name": "MicroPasts Project", "path": ["properties", "project"]
     }
   ]
 
