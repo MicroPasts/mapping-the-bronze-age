@@ -62,10 +62,10 @@ const features = records.data.reduce((all, row) => {
       title: objectType,
       source: Link,
       objectID: objectID,
-      institution: institution  ? 'Not recorded' : 'Not recorded',
-      context: context ? 'Not recorded' : 'Not recorded',
-      county: county ? 'Not recorded' : 'Not recorded',
-      country: country  ? 'Not recorded' : 'Not recorded',
+      institution: institution,
+      context: context,
+      county: county,
+      country: country,
       license: 'CC-BY'
     },
     descriptions: [{
