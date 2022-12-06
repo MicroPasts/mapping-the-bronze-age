@@ -17,13 +17,13 @@
       "name": "country", "path": ["properties", "country"]
     },
     {
-      "discovery": "custodian", "path": ["properties", "discovery"]
+      "name": "discovery year", "path": ["properties", "discovery"]
     },
     {
-      "context": "context", "path": ["properties", "context"]
+      "name": "context of discovery", "path": ["properties", "context"]
     },
     {
-      "institution": "context", "path": ["properties", "institution"]
+      "name": "holding institution", "path": ["properties", "institution"]
     }
   ]
 
