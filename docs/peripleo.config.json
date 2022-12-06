@@ -5,7 +5,7 @@
     {
       "name": "Bronze Age Index",
       "format": "LINKED_PLACES",
-      "src": "data/bai.json",
+      "src": "data/baiFull.json",
       "attribution": "The MicroPasts Community"
     }
   ],
