@@ -17,6 +17,9 @@
   ],
   "facets": [
     {
+      "name": "object type", "path": ["properties", "title"]
+    },
+    {
       "name": "county", "path": ["properties", "county"]
     },
     {
