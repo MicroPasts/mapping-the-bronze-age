@@ -32,7 +32,10 @@
       "name": "holding institution", "path": ["properties", "institution"]
     },
     {
-      "name": "MicroPasts Project", "path": ["properties", "project"]
+      "name": "micropasts project", "path": ["properties", "project"]
+    },
+    {
+      "name": "broadperiod", "path": ["properties", "broadperiod"]
     }
   ]
 
