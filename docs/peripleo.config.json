@@ -9,7 +9,22 @@
       "attribution": "The MicroPasts Community"
     }
   ],
-  "facets": [],
-  "link_icons": [
-      ]
+  "facets": [
+    {
+      "name": "county", "path": ["properties", "county"] 
+    },
+    {
+      "name": "country", "path": ["properties", "country"]
+    },
+    {
+      "discovery year": "custodian", "path": ["properties", "discovery"]
+    },
+    {
+      "context of discovery": "context", "path": ["properties", "context"]
+    },
+    {
+      "owning institution": "context", "path": ["properties", "institution"]
+    }
+  ]
+
 }
