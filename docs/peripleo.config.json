@@ -9,7 +9,7 @@
       "attribution": "The MicroPasts Community"
     },
     {
-      "name": "Portable Antiquities Bronze Age",
+      "name": "PAS Bronze Age",
       "format": "LINKED_PLACES",
       "src": "data/pas-ld.json",
       "attribution": "The Trustees of the British Museum"
