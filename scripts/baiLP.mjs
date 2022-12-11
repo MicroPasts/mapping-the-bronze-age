@@ -3,7 +3,7 @@ import Papa from 'papaparse';
 import { nanoid } from 'nanoid';
 
 const getPlace = (fourFigureLon,fourFigureLat) => {
-
+    console.log(fourFigureLon)
     return {
       type: 'Point',
       coordinates: [ parseFloat(fourFigureLon), parseFloat(fourFigureLat) ]
@@ -12,7 +12,7 @@ const getPlace = (fourFigureLon,fourFigureLat) => {
 }
 
 const buildFeature = (record, place, fourFigureLon, fourFigureLat) => {
-  if (!place?.trim())
+  if (!place?.trim() && !fourFigureLon?.trim())
     return;
 
   return {
@@ -33,7 +33,7 @@ const buildFeature = (record, place, fourFigureLon, fourFigureLat) => {
  * Note: for the dummy, each data point == one record at one particular place.
  * (I.e. one record linked to three places is represented as three data points)
  */
-const recordsCsv = fs.readFileSync('./baiTest.csv', { encoding: 'utf8' });
+const recordsCsv = fs.readFileSync('./baiGrids.csv', { encoding: 'utf8' });
 const records = Papa.parse(recordsCsv, { header: true });
 const baseUrl = 'https://bronze-age-index.micropasts.org/records/'
 const features = records.data.reduce((all, row) => {
@@ -53,7 +53,9 @@ const features = records.data.reduce((all, row) => {
   const county = row['county'];
   const country = row['country'];
   const context = row['context'];
-
+  const year =  row['dateDiscoveryYear'];
+  const project = row['project'];
+  const broadperiod = row['broadperiod'];
 
   const peripleoRecord = {
     '@id': URI,
@@ -66,7 +68,10 @@ const features = records.data.reduce((all, row) => {
       context: context,
       county: county,
       country: country,
-      license: 'CC-BY'
+      license: 'CC-BY',
+      discovery: year,
+      project: project,
+      broadperiod: broadperiod
     },
     descriptions: [{
       value: description
@@ -90,4 +95,4 @@ const fc = {
   features
 };
 
-fs.writeFileSync('bai.json', JSON.stringify(fc, null, 2), 'utf8');
+fs.writeFileSync('baiFull.json', JSON.stringify(fc, null, 2), 'utf8');
